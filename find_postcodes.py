@@ -1,7 +1,8 @@
 import csv
+import sys
 
 if __name__ == "__main__":
-    x = csv.reader(open("subscribed_people.csv"))
+    x = csv.reader(open(sys.argv[1]))
     print "postcode"
     for line in x:
         if len(line) > 0:
